@@ -1,5 +1,5 @@
 public class LuxuryWagon extends Wagon{
-    public LuxuryWagon(){
-        super(12, false, false);
+    public LuxuryWagon(int orderNumb){
+        super(orderNumb, 12, false, false);
     }
 }

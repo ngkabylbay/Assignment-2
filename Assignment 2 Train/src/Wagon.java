@@ -4,12 +4,15 @@ public class Wagon {
     private int seatAmount;
     private boolean isRestaurant;
     private boolean isFreight;
+    private int orderNumb;
     ArrayList <Ticket> tickets = new ArrayList<>();
 
-    public Wagon(int seatAmount, boolean isRestaurant, boolean isFreight){
+    public Wagon(){}
+    public Wagon(int orderNumb, int seatAmount, boolean isRestaurant, boolean isFreight){
         this.seatAmount = seatAmount;
         this.isRestaurant = isRestaurant;
         this.isFreight = isFreight;
+        this.orderNumb = orderNumb;
     }
 
     public int getSeatAmount() {
@@ -42,5 +45,13 @@ public class Wagon {
 
     public void setTickets(ArrayList <Ticket> tickets) {
         this.tickets = tickets;
+    }
+
+    public int getOrderNumb() {
+        return orderNumb;
+    }
+
+    public void setOrderNumb(int orderNumb) {
+        this.orderNumb = orderNumb;
     }
 }

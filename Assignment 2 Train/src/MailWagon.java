@@ -1,5 +1,5 @@
 public class MailWagon extends Wagon {
-    public MailWagon(){
-        super(0, false, true);
+    public MailWagon(int orderNumb){
+        super(orderNumb, 0, false, true);
     }
 }

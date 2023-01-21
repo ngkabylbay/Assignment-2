@@ -6,9 +6,9 @@ public class Ticket {
 
     Ticket(){}
 
-    Ticket(int ticketId, Passenger owner){
+    Ticket(int id, Passenger owner){
+        this.id = id;
         this.owner = owner;
-        this.id = ticketId;
     }
 
     public int getId() {

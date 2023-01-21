@@ -8,6 +8,18 @@ public class Train {
     private Wagon[] wagons;
     public Train(){}
 
+    public Train(int id){
+        this.id = id;
+    }
+
+    public Train(int id, String name, String direction, String date) {
+        this.id = id;
+        this.name = name;
+        this.wagonAmount = wagonAmount;
+        this.direction = direction;
+        this.date = date;
+    }
+
     public Train(int id, String name, int wagonAmount, String direction, String date, int maxSpeed) {
         this.id = id;
         this.name = name;
@@ -17,11 +29,14 @@ public class Train {
         this.wagons = new Wagon[wagonAmount];
     }
 
-    public int getId() {
+
+
+    public int getTrainId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(int id
+    ) {
         this.id = id;
     }
 
@@ -33,7 +48,7 @@ public class Train {
         this.wagonAmount = wagonAmount;
     }
 
-    public String getName() {
+    public String getTrainName() {
         return name;
     }
 
